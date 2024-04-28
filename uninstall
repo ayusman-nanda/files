@@ -1,17 +1,21 @@
 #!/bin/sh
+
+# Function to remove files directory and display success message
+remove_files() {
+  sudo rm -r files
+  echo "Success !"
+}
+
 case "$1" in
   arch)
     $0 debian
-    cd /srv/http/ ;
-    sudo rm -r files ;
-    echo "Success !" ;  
+    cd /srv/http && remove_files
     ;;
   debian)
-    cd  /var/www/html/ ;
-    sudo rm -r files ;
-    echo "Success !" ; 
+    cd /var/www/html && remove_files
     ;;
   *)
     echo "Usage: $0 arch|debian" >&2
+    exit 1
     ;;
 esac

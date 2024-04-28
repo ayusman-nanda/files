@@ -13,9 +13,10 @@ Or you can the delete the directory files from your server .
 # How to increase the upload size ?
 
 To increase the upload size you have to modify the variables present inside the php.ini file in you mechine .
+'''
 1. post_max_size 
 2. upload_max_filesize
-
+'''
 
 Good day :)
 

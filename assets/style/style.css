@@ -1,41 +1,29 @@
-.chosebtn{
-    background-color: #808080;
-    border: none;
+/* Button style */
+.button {
+    background-color: indigo;
     color: white;
-    width: 220px;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
     cursor: pointer;
-   
-}
-
-.uploadbtn{
-    background-color: #0daf87;
-    border: none;
-    color: white;
-    width: 220px;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-
-
-
-
-
-}
-
-a:link, a:visited {
-    background-color: #000000;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
+    margin-top: 1rem;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Add some space between buttons */
+}
+.button:hover {
+    background-color: #6b38ff; /* Change color on hover */
+}
+/* Hover styles for delete button */
+.delete:hover {
     background-color: red;
-  }
-  
+}
+/* Hover styles for download and open buttons */
+.download:hover,
+.open:hover {
+    background-color: lightgreen;
+}
+/* Checkbox style */
+.file-checkbox {
+    margin-right: 10px;
+}
